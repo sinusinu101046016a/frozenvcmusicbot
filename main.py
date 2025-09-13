@@ -61,10 +61,10 @@ from FrozenMusic.telegram_client.startup_hooks import precheck_channels
 load_dotenv()
 
 
-API_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
-ASSISTANT_SESSION = os.environ.get("ASSISTANT_SESSION")
+API_ID = int(os.environ.get("29568441"))
+API_HASH = os.environ.get("8416055112:AAG1hDhFpPtkhOyvIPm0OwDiBgNfIVsWoac")
+BOT_TOKEN = os.environ.get("8416055112:AAG1hDhFpPtkhOyvIPm0OwDiBgNfIVsWoac")
+ASSISTANT_SESSION = os.environ.get("BQE1hZwAf8pPWUrjMms0Ps-AhEhDK84RnVDMW6-xNJQ4nkOBSEaN5yrgEGn-5zSXcS-B9dLNgLiHXSpjF2-38a8YNpPJ2cJPgTR1UTp1CdUaipoRjURzgymKn9jnyZdFWFGIdbGFGaDTBKN4elR9UZn62CePSLpANEhSNjF1DQsjUw3WjzwELIVv7tLWAmHyOrENieTBUTxuFJa_F-odNyD5iGHcTqujWwg94j6b4D8nLvnYhZCixrBy1tceZUyYfybwCpkQGaxVFA9tJjUAwxamqzVpYkvVqRQilPamr1jHMoRsN25Z83GlKfwaxM3jmA40ZBfWRLZOp4iBn-uUKLQ0k-OmqQAAAAGbI8sQAA")
 OWNER_ID = int(os.getenv("OWNER_ID", "5268762773"))
 
 # ——— Monkey-patch resolve_peer ——————————————
@@ -100,13 +100,13 @@ assistant = Client("assistant_account", session_string=ASSISTANT_SESSION)
 call_py = PyTgCalls(assistant)
 
 
-ASSISTANT_USERNAME = None
-ASSISTANT_CHAT_ID = None
+ASSISTANT_USERNAME =Messizin_music
+ASSISTANT_CHAT_ID = 6897781520
 API_ASSISTANT_USERNAME = os.getenv("API_ASSISTANT_USERNAME")
 
 
 # ─── MongoDB Setup ─────────────────────────────────────────
-mongo_uri = os.environ.get("MongoDB_url")
+mongo_uri = os.environ.get("mongodb+srv://rj5706603:O95nvJYxapyDHfkw@cluster0.fzmckei.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 mongo_client = MongoClient(mongo_uri)
 db = mongo_client["music_bot"]
 
